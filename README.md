@@ -11,7 +11,7 @@ Expose VSCode tasks to AI coding assistants (Cline, etc.) via the Model Context 
 
 ```bash
 # Clone
-git clone <your-repo-url>
+git clone https://github.com/hwshqtb/vscode-task-mcp.git
 cd mcp
 
 # Install & compile
@@ -23,7 +23,7 @@ Then press **F5** in VSCode to start extension development, or package it:
 
 ```bash
 npx vsce package
-code --install-extension mcp-0.1.0.vsix
+code --install-extension ./vscode-task-mcp-0.1.0.vsix
 ```
 
 ## Cline MCP Configuration
@@ -39,14 +39,12 @@ Add this to your Cline MCP settings (`cline_mcp_settings.json`):
       "type": "stdio",
       "command": "node",
       "args": [
-        "~/.vscode/extensions/<publisher>.mcp-<version>/out/mcp-stdio-bridge.js"
+        "~/.vscode/extensions/hwshqtb.vscode-task-mcp-<version>/out/mcp-stdio-bridge.js"
       ]
     }
   }
 }
 ```
-
-> Replace `<publisher>` with the actual publisher name.
 
 ## Architecture
 

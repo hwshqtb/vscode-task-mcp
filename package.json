@@ -1,8 +1,10 @@
 {
-  "name": "vscod-task-mcp",
+  "name": "vscode-task-mcp",
   "displayName": "VSCode Task MCP",
   "description": "Expose VSCode tasks to AI coding assistants (Cline, etc.) via MCP",
   "version": "0.1.0",
+  "publisher": "hwshqtb",
+  "repository": "https://github.com/hwshqtb/vscode-task-mcp",
   "engines": {
     "vscode": "^1.89.0"
   },
